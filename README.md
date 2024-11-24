@@ -40,8 +40,3 @@ Execute in the root directory
 ```
 pytest
 ```
-
-# Important NOTE
-
-### There is a problem with the get summary example in the exercise.
-### The requirement is that the get summary function should sort by total score first and then most recent match. But the example given example has Uruguay vs Italy match before Spain vs Brazil in the summary

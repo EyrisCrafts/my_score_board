@@ -29,7 +29,7 @@ class ScoreBoard:
     def generate_summary(self) -> List[str]:
         return sorted(
             self.matches,
-            key=lambda match: (match.get_total_score(), match.match_start_time_ms),
+            key=lambda match: (match.get_total_score(), -match.match_start_time_ms),
             reverse=True
         )
 

@@ -52,8 +52,8 @@ def test_scoreboard_generate_summary():
     
     
     summary = scoreboard.generate_summary()
-    assert summary[0].home_team == "Spain"  
-    assert summary[1].home_team == "Uruguay"
+    assert summary[0].home_team == "Uruguay"  
+    assert summary[1].home_team == "Spain"
 
 def test_scoreboard_generate_summary_empty():
     scoreboard = ScoreBoard()
