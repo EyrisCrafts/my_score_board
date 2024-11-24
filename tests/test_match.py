@@ -4,9 +4,9 @@ import pytest
 from my_score_board.match import Match
 
 def test_initalization():
-    start_time = int(time.time() * 1000)
+    start_time = int(time.time() * 10000000)
     match = Match(home_team="Germany", away_team="Italy")
-    end_time = int(time.time() * 1000)
+    end_time = int(time.time() * 10000000)
     assert match.home_team == "Germany"
     assert match.away_team == "Italy"
     assert match.score_home_team == 0
