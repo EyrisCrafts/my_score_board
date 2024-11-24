@@ -9,8 +9,12 @@ class Match:
         self.match_start_time_ms = int(time() * 1000) # in MS since epoch
     
     def update_score(self, home_team_score: int, away_team_score: int):
-        raise NotImplementedError("Not yet implemented")
+        if home_team_score < 0 or away_team_score < 0:
+            raise ValueError
+        
+        self.score_home_team = home_team_score
+        self.score_away_team = away_team_score
     
     def get_total_score(self) -> int:
-        raise NotImplementedError("Not yet implemented")
+        return self.score_home_team + self.score_away_team
     
